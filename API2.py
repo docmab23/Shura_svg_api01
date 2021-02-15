@@ -49,7 +49,7 @@ def post_file(filename,o,n):
 
     # Return 201 CREATED
     return "", 201
-    return send_from_directory(os.path.join(UPLOAD_DIRECTORY), filename, as_attachment=True)
+    return send_from_directory(UPLOAD_DIRECTORY, filename, as_attachment=True)
 
 
 if __name__ == "__main__":
