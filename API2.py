@@ -32,7 +32,7 @@ def get_file(path):
     return send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
 
 
-@api.route("/files/<filename>/<string:o>/<string:n>", methods=["POST"])
+@api.route("/files/<filename>/<string:o>/<string:n>", methods=["GET" , "POST"])
 def post_file(filename,o,n):
     """Upload a file."""
 
