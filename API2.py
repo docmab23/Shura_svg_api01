@@ -3,7 +3,7 @@ import fileinput
 from flask import Flask, request, abort, jsonify, send_from_directory
 
 
-UPLOAD_DIRECTORY = "C:/Users/Administrator/final2/dexter/webapp_svg_file/uploads2"
+UPLOAD_DIRECTORY = "/uploads"
 
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
