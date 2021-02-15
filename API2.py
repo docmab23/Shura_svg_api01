@@ -49,4 +49,4 @@ def post_file(filename,o,n):
 
 
 if __name__ == "__main__":
-    api.run(debug=True, port=8000)
+    api.run(debug=True)
