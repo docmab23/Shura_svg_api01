@@ -1,5 +1,4 @@
 import os
-import fileinput
 from flask import Flask, request, abort, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 
