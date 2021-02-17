@@ -35,10 +35,12 @@ def getfile():
      return file.read()
 
 
-@api.route("/do_it/<string:o>/<string:n>", methods=["POST"])
-def do_it(o,n):
+@api.route("/do_it", methods=["POST"])
+def do_it():
     """Upload a file."""
     file = request.files['file']
+    o =    request.args.get('o')
+    n =    request.args.get('n')
     fname = file.filename
     data = file.read()
     path = os.path.join(UPLOAD_DIRECTORY,fname)
